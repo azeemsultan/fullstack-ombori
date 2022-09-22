@@ -1,0 +1,40 @@
+.ripple {
+    position: fixed;
+    top: 50%;
+    transform: translate(0%,-33%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: ripple 1s linear infinite;
+}
+
+.rip {
+    position: fixed;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #7FB900;
+    border-radius: 50%;
+    z-index: 100;
+}
+.r0 {
+    background-color: #7FB900;
+}
+.r1 {
+    width: 50px;
+    height: 50px;
+    animation-delay: 0.5s;
+}
+
+@keyframes ripple {
+    from {
+        border: 4px solid #D1E6A3;
+        background: #D1E6A3;
+    }
+    to {
+        border: 0px solid #E5F1CC;
+        background: #E5F1CC;
+        width: 80px;
+        height: 80px;
+    }
+}
